@@ -2,7 +2,7 @@ package fr.main;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
-
+ 
 public class DrawKB extends JPanel{
 
 	/**
