@@ -1,0 +1,1 @@
+package fr.log4j2;
