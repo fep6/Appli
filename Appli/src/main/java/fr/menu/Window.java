@@ -28,14 +28,12 @@ import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 public class Window extends JFrame{
 	private static final long serialVersionUID = -6906441042070858585L;
 		
-		JFrame fenetre = new JFrame();
-		DrawKB dkb = new DrawKB();
-		//FrKBPrint cc = new FrKBPrint();
-		JButton[][] bouton= new JButton[21][6];
-		//JButton[][] bouton= new JButton[100][100];
-		JButton boutonSimple;
-		JPanel panel = new JPanel();
-		String date = String.format("%1$tI:%1$tM %1$Tp, %1$te %1$tb %1$tY", new java.util.Date());
+		private JFrame fenetre = new JFrame();
+		private DrawKB dkb = new DrawKB();
+		private JButton[][] bouton= new JButton[21][6];
+		private JButton boutonSimple;
+		private JPanel panel = new JPanel();
+		private String date = String.format("%1$tI:%1$tM %1$Tp, %1$te %1$tb %1$tY", new java.util.Date());
 		
 
 	public Window() {

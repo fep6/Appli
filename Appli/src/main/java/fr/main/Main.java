@@ -1,11 +1,9 @@
 package fr.main;
  
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
-import fr.menu.Affichage;
-import fr.menu.Window;
+import javax.swing.UnsupportedLookAndFeelException;
+import fr.menu.Menu;
+
 
 public class Main {		
 
@@ -14,7 +12,7 @@ public class Main {
 
 		
 		//Affichage du menu
-		Affichage aff = new Affichage();
+		Menu menu = new Menu();
 		 
 		
 		

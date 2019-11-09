@@ -4,9 +4,9 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
-public class Main {		
+public class Menu {		
 
-	public static void main(String[] args) throws UnsupportedLookAndFeelException {
+	public Menu() throws UnsupportedLookAndFeelException {
 		
 		// Application du look nimbus
 		 UIManager.setLookAndFeel(new NimbusLookAndFeel());
