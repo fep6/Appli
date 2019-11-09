@@ -1,4 +1,4 @@
-package fr.menu;
+package fr.affichage;
  
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;

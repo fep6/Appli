@@ -1,9 +1,15 @@
-package fr.menu;
-public class FrKBPrint {
-	
+package fr.affichage;
+
+/**
+ * @author fep
+ * Simplified keyboard
+ */
+
+public class FrKBTouchSimp {
+
 	private String[][] caracTouche = new String[21][6];
 	
-	FrKBPrint(){
+	FrKBTouchSimp(){
 		caracTouche[0][0]="Esc";
 		caracTouche[1][0]="F1";
 		caracTouche[2][0]="F2";
@@ -22,18 +28,18 @@ public class FrKBPrint {
 		caracTouche[15][0]="Pau";
 		
 		caracTouche[0][1]="²";
-		caracTouche[1][1]="<html>1<br>&</html>";
-		caracTouche[2][1]="<html>2<br>é&nbsp&nbsp~</html>";
-		caracTouche[3][1]="<html>3<br>\"&nbsp&nbsp# </html>";
-		caracTouche[4][1]="<html>4<br>\'&nbsp&nbsp{</html>";
-		caracTouche[5][1]="<html>5<br>(&nbsp&nbsp[</html>";
-		caracTouche[6][1]="<html>6<br>-&nbsp&nbsp|</html>";
-		caracTouche[7][1]="<html>7<br>è&nbsp&nbsp`</html>";
-		caracTouche[8][1]="<html>8<br>_&nbsp&nbsp\\</html>";
-		caracTouche[9][1]="<html>9<br>ç&nbsp&nbsp^</html>";
-		caracTouche[10][1]="<html>0<br>à&nbsp&nbsp@</html>";
-		caracTouche[11][1]="<html>°<br>)&nbsp&nbsp]</html>";
-		caracTouche[12][1]="<html>+<br>=&nbsp&nbsp}</html>";
+		caracTouche[1][1]="1";
+		caracTouche[2][1]="2";
+		caracTouche[3][1]="3";
+		caracTouche[4][1]="4";
+		caracTouche[5][1]="5";
+		caracTouche[6][1]="6";
+		caracTouche[7][1]="7";
+		caracTouche[8][1]="8";
+		caracTouche[9][1]="9";
+		caracTouche[10][1]="0";
+		caracTouche[11][1]="°";
+		caracTouche[12][1]="+";
 		caracTouche[13][1]="Bsp";
 		caracTouche[14][1]="Ins";
 		caracTouche[15][1]="Déb";
@@ -54,8 +60,8 @@ public class FrKBPrint {
 		caracTouche[8][2]="i";
 		caracTouche[9][2]="o";
 		caracTouche[10][2]="p";
-		caracTouche[11][2]="<html>¨<br>^</html>";
-		caracTouche[12][2]="<html>£<br>$&nbsp&nbsp¤</html>";
+		caracTouche[11][2]="^";
+		caracTouche[12][2]="$";
 		caracTouche[13][2]="Ent";
 		caracTouche[14][2]="Sup";
 		caracTouche[15][2]="Fin";
@@ -76,24 +82,24 @@ public class FrKBPrint {
 		caracTouche[8][3]="k";
 		caracTouche[9][3]="l";
 		caracTouche[10][3]="m";
-		caracTouche[11][3]="<html>%<br>ù</html>";
-		caracTouche[12][3]="<html>µ<br>*</html>";
+		caracTouche[11][3]="ù";
+		caracTouche[12][3]="*";
 		caracTouche[13][3]="4";
 		caracTouche[14][3]="5";
 		caracTouche[15][3]="6";
 		
 		caracTouche[0][4]="LSh";		
-		caracTouche[1][4]="<html>><br><</html>";
+		caracTouche[1][4]="<";
 		caracTouche[2][4]="w";
 		caracTouche[3][4]="x";
 		caracTouche[4][4]="c";
 		caracTouche[5][4]="v";
 		caracTouche[6][4]="b";
 		caracTouche[7][4]="n";
-		caracTouche[8][4]="<html>?<br>,</html>";
-		caracTouche[9][4]="<html>.<br>;</html>";
-		caracTouche[10][4]="<html>/<br>:</html>:";
-		caracTouche[11][4]="<html>§<br>!</html>";
+		caracTouche[8][4]=",";
+		caracTouche[9][4]=";";
+		caracTouche[10][4]=":";
+		caracTouche[11][4]="!";
 		caracTouche[12][4]="RSh";
 		caracTouche[13][4]="UAr";
 		caracTouche[14][4]="1";

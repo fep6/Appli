@@ -1,4 +1,4 @@
-package fr.menu;
+package fr.affichage;
 
 // https://www.youtube.com/watch?v=-UvxwleNA20&t=221s
 import java.awt.BorderLayout;

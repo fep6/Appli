@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="fr.menu.Menu" project="Projet12Appli" 
-    file="/Projet12Appli/src/main/java/fr/menu/Menu.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="fr.affichage.Menu" project="Projet12Appli" 
+    file="/Projet12Appli/src/main/java/fr/affichage/Menu.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="695" y="175"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -19,8 +19,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="fr.menu.DrawKB" project="Projet12Appli" 
-    file="/Projet12Appli/src/main/java/fr/menu/DrawKB.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="fr.affichage.DrawKB" project="Projet12Appli" 
+    file="/Projet12Appli/src/main/java/fr/affichage/DrawKB.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="699" y="760"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -28,8 +28,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="fr.menu.Window" project="Projet12Appli" 
-    file="/Projet12Appli/src/main/java/fr/menu/Window.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="4" language="java" name="fr.affichage.Window" project="Projet12Appli" 
+    file="/Projet12Appli/src/main/java/fr/affichage/Window.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="690" y="376"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -37,9 +37,9 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="fr.menu.FrKBPrint" project="Projet12Appli" 
-    file="/Projet12Appli/src/main/java/fr/menu/FrKBPrint.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="416" y="682"/>    
+  <class id="5" language="java" name="fr.affichage.FrKBTouch" project="Projet12Appli" 
+    file="/Projet12Appli/src/main/java/fr/affichage/FrKBTouch.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="422" y="609"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -62,14 +62,6 @@
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="4"/>  
   </dependency>  
-  <association id="11">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="12" name="kbp"/>      
-      <multiplicity id="13" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

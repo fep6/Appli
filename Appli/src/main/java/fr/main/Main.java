@@ -2,7 +2,8 @@ package fr.main;
  
 
 import javax.swing.UnsupportedLookAndFeelException;
-import fr.menu.Menu;
+
+import fr.affichage.Menu;
 
 
 public class Main {		

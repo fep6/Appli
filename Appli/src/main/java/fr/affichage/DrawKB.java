@@ -1,4 +1,4 @@
-package fr.menu;
+package fr.affichage;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
@@ -12,10 +12,10 @@ public class DrawKB extends JPanel{
 	
 	
 	
-	FrKBPrint kbp;
-	JButton[][] bouton= new JButton[21][6];
-	JButton boutonSimple;
-	JPanel panel = new JPanel();
+	private FrKBTouchSimp frkbps;
+	private JButton[][] bouton= new JButton[21][6];
+	private JButton boutonSimple;
+	private JPanel panel = new JPanel();
 	/**
 	 * Abcisse clavier
 	 */
@@ -43,7 +43,7 @@ public class DrawKB extends JPanel{
 	
 	DrawKB(){
 		super();
-		kbp = new FrKBPrint();
+		frkbps = new FrKBTouchSimp();
 		panel = new JPanel();
 		abcisseClavier=0;
 		largeurTouche=50;
@@ -75,7 +75,7 @@ public class DrawKB extends JPanel{
 				if (j==4) gestionligne5(i);		
 				if (j==5) gestionligne6(i);
 				//Titre du bouton
-				bouton [i][j]= new JButton(kbp.getTouche(i,j));
+				bouton [i][j]= new JButton(frkbps.getTouche(i,j));
 				// Dessin du bouton : x ,y, width, HauteurTouche
 				bouton[i][j].setBounds(abcisseClavier,ordonnéeClavier,largVariableTouche,hauteurVariableTouche);
 				mainScreen.add(bouton[i][j]);
@@ -84,7 +84,7 @@ public class DrawKB extends JPanel{
 				//On teste si on est en fin de la ligne considérée
 				i= test (i,j);
 			}
-			// Ligne suivante (on met un espabcisseClaviere entre la 1ere ligne et la deuxième)
+			// Ligne suivante (on met un esp abcisseClaviere entre la 1ere ligne et la deuxième)
 			abcisseClavier=0;
 			if (j!=0) {
 				ordonnéeClavier=ordonnéeClavier+hauteurTouche;
