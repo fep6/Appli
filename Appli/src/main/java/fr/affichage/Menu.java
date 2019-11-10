@@ -6,7 +6,8 @@ import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
 public class Menu {		
 
-	public Menu() throws UnsupportedLookAndFeelException {
+
+	public void doMenu() throws UnsupportedLookAndFeelException{
 		
 		// Application du look nimbus
 		 UIManager.setLookAndFeel(new NimbusLookAndFeel());
@@ -14,6 +15,7 @@ public class Menu {
 		//Début de la création de fenêtre
 		Window window = new Window();
 		window.setVisible(true);
+		
 	}
 
 

@@ -15,7 +15,7 @@ public class Main {
 		//Affichage du menu
 		Menu menu = new Menu();
 		 
-		
+		menu.doMenu();
 		
 		
 	}
