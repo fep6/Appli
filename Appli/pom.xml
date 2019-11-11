@@ -34,13 +34,6 @@
 			<artifactId>log4j-core</artifactId>
 			<version>2.12.1</version>
 		</dependency>
-	<!-- A voir... https://mvnrepository.com/artifact/org.lwjgl/lwjgl-glfw -->
-		<dependency>
-		    <groupId>org.lwjgl</groupId>
-		    <artifactId>lwjgl-glfw</artifactId>
-		    <version>3.2.3</version>
-		</dependency>
-		
 	<!-- lwjgl 2/2-->
 		<dependency>
 			<groupId>org.lwjgl</groupId>
@@ -61,6 +54,10 @@
 		<dependency>
 			<groupId>org.lwjgl</groupId>
 			<artifactId>lwjgl-egl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.lwjgl</groupId>
+			<artifactId>lwjgl-glfw</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.lwjgl</groupId>
@@ -207,6 +204,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.lwjgl</groupId>
+			<artifactId>lwjgl-glfw</artifactId>
+			<classifier>${lwjgl.natives}</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.lwjgl</groupId>
 			<artifactId>lwjgl-jemalloc</artifactId>
 			<classifier>${lwjgl.natives}</classifier>
 		</dependency>
@@ -346,75 +348,5 @@
 			<classifier>${lwjgl.natives}</classifier>
 		</dependency>
 		
-	</dependencies>
-	
-	<!-- include below build tag to your existing pom.xml  --> 
-	<build>
-	
-	 <plugins>
-		<plugin>
-		    <groupId>org.apache.maven.plugins</groupId>
-		    <artifactId>maven-shade-plugin</artifactId>
-		    <version>3.0.0</version>
-		    <configuration>
-		        <createDependencyReducedPom>false</createDependencyReducedPom>
-		        <filters>
-		            <filter>
-		                <artifact>*:*</artifact>
-		                <excludes>
-		                    <exclude>META-INF/*.SF</exclude>
-		                    <exclude>META-INF/*.DSA</exclude>
-		                    <exclude>META-INF/*.RSA</exclude>
-		                </excludes>
-		            </filter>
-		        </filters>
-		    </configuration>
-		    <executions>
-		        <execution>
-		            <phase>package</phase>
-		            <goals>
-		                <goal>shade</goal>
-		            </goals>
-		            <configuration>
-		                <transformers>
-		                    <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
-		                    <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-		                        <mainClass>principal/Main</mainClass>
-		                        <manifestEntries>
-		                            <Class-Path>..</Class-Path>
-		                        </manifestEntries>
-		                    </transformer>
-		
-		                    <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-		                        <resource>META-INF/cxf/bus-extensions.txt</resource>
-		                    </transformer>
-		
-		                </transformers>
-		            </configuration>
-		        </execution>
-		    </executions>
-		</plugin>
-
-
-		<plugin>
-		    <groupId>org.apache.maven.plugins</groupId>
-		    <artifactId>maven-dependency-plugin</artifactId>
-		    <executions>
-		        <execution>
-		             <id>copy-dependencies</id>
-		             <phase>package</phase>
-		             <goals>
-		                 <goal>copy-dependencies</goal>
-		             </goals>
-		             <configuration>
-		                 <outputDirectory>${project.build.directory}/lib</outputDirectory>
-		             </configuration>
-		        </execution>
-		     </executions>
-		</plugin>
-	 </plugins>
-	</build>
- 
-
-	 
+	</dependencies> 
 </project>
