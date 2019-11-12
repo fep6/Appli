@@ -2,6 +2,8 @@ package fr.input;
 
 import static org.lwjgl.glfw.GLFW.*;
 
+import java.nio.ByteBuffer;
+
 import org.lwjgl.glfw.GLFWErrorCallback;
 
 public class InputDetection {
@@ -9,20 +11,16 @@ public class InputDetection {
 	  private boolean joystickPresent2;
 	  private String nameJoystick1;
 	  private String nameJoystick2;
-	  private int buttonsJ1;
-	  private int count;
+	  private ByteBuffer buttonsJ1;
+	  private ByteBuffer buttonsJ2;
 	  
 	  InputDetection(){
 		  init();
-		  joystickPresent1 = glfwJoystickPresent (GLFW_JOYSTICK_1);
-		  joystickPresent2 = glfwJoystickPresent (GLFW_JOYSTICK_2);
-		  nameJoystick1= glfwGetJoystickName(GLFW_JOYSTICK_1);
-		  nameJoystick2= glfwGetJoystickName(GLFW_JOYSTICK_2);
-		  buttonsJ1=glfwGetJoystickButtons(GLFW_JOYSTICK_1,count);
+		  doDetection();
 	  }
 	  
 	void init(){
-
+			// indique que le joystick a un chapeau chinois
 			glfwInitHint ( GLFW_JOYSTICK_HAT_BUTTONS , GLFW_FALSE );
 			
 			// Setup an error callback. The default implementation
@@ -34,6 +32,21 @@ public class InputDetection {
 				throw new IllegalStateException("Unable to initialize GLFW"); 
 			
 	  }
+	void doDetection() {
+		  joystickPresent1 = glfwJoystickPresent (GLFW_JOYSTICK_1);
+		  joystickPresent2 = glfwJoystickPresent (GLFW_JOYSTICK_2);
+		  nameJoystick1= glfwGetJoystickName(GLFW_JOYSTICK_1);
+		  nameJoystick2= glfwGetJoystickName(GLFW_JOYSTICK_2);
+		  buttonsJ1=glfwGetJoystickButtons(GLFW_JOYSTICK_1);
+		  buttonsJ2=glfwGetJoystickButtons(GLFW_JOYSTICK_2);
+	}
+	void printDetection() {
+		
+	}
+
+	public void exitGLFW() {
+		glfwTerminate();
+	}
 	  String nameDetectJ1(){
 		  return nameJoystick1;
 	  }
@@ -48,7 +61,4 @@ public class InputDetection {
 		  return joystickPresent2;
 	  }
 
-	public void exitGLFW() {
-		glfwTerminate();
-	}
 }
