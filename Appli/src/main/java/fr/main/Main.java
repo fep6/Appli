@@ -1,28 +1,10 @@
 package fr.main;
- 
 
-import javax.swing.UnsupportedLookAndFeelException;
+public class Main {
 
-import fr.affichage.Menu;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 
-
-public class Main {		
-
-	public static void main(String[] args) throws UnsupportedLookAndFeelException  {
-		
-
-		
-		//Affichage du menu
-		Menu menu = new Menu();
-		 
-		menu.doMenu();
-		
-		
 	}
 
-
-
 }
-
-
-
