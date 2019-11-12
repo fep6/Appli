@@ -20,7 +20,7 @@ public class InputDetection {
 	  }
 	  
 	void init(){
-			// indique que le joystick a un chapeau chinois
+			// indique que le joystick a un chapeau chinois dans le renvoi de glfwGetJoystickButtons()
 			glfwInitHint ( GLFW_JOYSTICK_HAT_BUTTONS , GLFW_FALSE );
 			
 			// Setup an error callback. The default implementation
@@ -41,24 +41,12 @@ public class InputDetection {
 		  buttonsJ2=glfwGetJoystickButtons(GLFW_JOYSTICK_2);
 	}
 	void printDetection() {
-		
+		System.out.println("La 1er joystick est un "+ nameJoystick1+". Il comporte "+ buttonsJ1 + "boutons. ");
+		System.out.println("La 2eme joystick est un "+ nameJoystick2+". Il comporte "+ buttonsJ2 + "boutons. ");
 	}
 
 	public void exitGLFW() {
 		glfwTerminate();
 	}
-	  String nameDetectJ1(){
-		  return nameJoystick1;
-	  }
-	  String nameDetectJ2(){
-		  return nameJoystick2;
-	  }
-	  boolean joystick1Present() {
-		  return joystickPresent1;
-	  }
-
-	  boolean joystick2Present() {
-		  return joystickPresent2;
-	  }
 
 }
