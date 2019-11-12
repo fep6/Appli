@@ -15,7 +15,7 @@ public class MainInput {
 		
 		
 		// Fermeture de la bibliotheque
-		iDetection.exitGLFW();
+//		iDetection.exitGLFW();
 	}
 
 }
