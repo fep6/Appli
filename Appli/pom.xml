@@ -29,7 +29,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-  	
+  	<!-- https://mvnrepository.com/artifact/org.lwjgl/lwjgl-glfw/3.1.5 -->
   	<dependencies>
  	<!-- log4j -->
  		<dependency>
@@ -47,7 +47,7 @@
 		    <groupId>org.lwjgl</groupId>
 		    <artifactId>lwjgl-glfw</artifactId>
 		    <version>3.2.3</version>
-		</dependency> -->
+		</dependency>  -->
 	<!-- lwjgl 2/2-->
 		<dependency>
 			<groupId>org.lwjgl</groupId>
@@ -69,10 +69,10 @@
 			<groupId>org.lwjgl</groupId>
 			<artifactId>lwjgl-egl</artifactId>
 		</dependency>
-		<dependency>
+<!-- 		<dependency>
 			<groupId>org.lwjgl</groupId>
 			<artifactId>lwjgl-glfw</artifactId>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.lwjgl</groupId>
 			<artifactId>lwjgl-jawt</artifactId>

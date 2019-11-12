@@ -41,7 +41,7 @@ public class InputDetection {
 		  buttonsJ2=glfwGetJoystickButtons(GLFW_JOYSTICK_2);
 	}
 	void printDetection() {
-		System.out.println("La 1er joystick est un "+ nameJoystick1+". Il comporte "+ buttonsJ1 + "boutons. ");
+		System.out.println("La 1er joystick est un "+ nameJoystick1+". Il comporte "+ (buttonsJ1)  + "boutons. ");
 		System.out.println("La 2eme joystick est un "+ nameJoystick2+". Il comporte "+ buttonsJ2 + "boutons. ");
 	}
 

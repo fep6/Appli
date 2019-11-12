@@ -7,7 +7,7 @@ package fr.input;
 
 public class MainInput {
 
-	public static void main(String[] args) {
+	 public MainInput() {
 		
 		InputDetection iDetection = new InputDetection();
 		iDetection.doDetection();

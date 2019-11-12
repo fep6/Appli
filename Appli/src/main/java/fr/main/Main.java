@@ -1,9 +1,11 @@
 package fr.main;
 
+import fr.input.MainInput;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		MainInput mi = new MainInput();
 
 	}
 
