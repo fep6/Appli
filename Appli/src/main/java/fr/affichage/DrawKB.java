@@ -14,7 +14,7 @@ public class DrawKB extends JPanel{
 	
 	private FrKBTouchSimp frkbps;
 	private JButton[][] bouton= new JButton[21][6];
-	private JButton boutonSimple;
+//	private JButton boutonSimple;
 	private JPanel panel = new JPanel();
 	/**
 	 * Abcisse clavier
